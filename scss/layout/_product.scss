@@ -1,0 +1,158 @@
+.vigo-product{
+    padding-bottom: 0;
+	.page-title{
+	    padding-bottom: 12px;
+	}
+	.product-box{
+		text-align: center;
+	}
+	.flexslider{
+		margin-bottom: 0;
+		border: 0;
+	}
+	.flex-active-slide{
+		img{
+			transition: 0.5s;
+			box-shadow: 0px 1px 22px -1px rgba(0, 0, 0, 0.21);
+		}
+	}
+	.flex-direction-nav a{
+	    margin: -12px 0 0 !important;
+	}
+	.vigo-small-img{
+	    padding-top: 10px;	
+        padding-bottom: 10px;	
+	}
+	.product-box{
+		margin-top: 10px;
+	}
+	.product_rating{
+		i{
+			font-size: 14px;
+			color: #eab230;
+			letter-spacing: 4px;
+		}
+	}
+	.rating_subtitle{
+		margin-left: 5px;
+		font-size: 14px;
+	}
+	.product-price{
+		margin: 10px 0;
+		font-size: 16px;
+		font-weight: 800;
+	}
+	.product-content{
+		padding-top: 10px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+		border-top: 1px solid #c8c8c8;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.product-view{
+		overflow: hidden;
+	}
+	.vigo-btn{
+	    padding: 10px 5px;
+	}
+	.product-box-content{
+		.flexslider .slides>li{
+			margin-right: 15px !important;
+		}
+	}
+	input{
+		background: #f1f1f1;
+		border-radius: 5px;
+		&:focus{
+			background: #f1f1f1;
+		}
+	}
+	input[type=text], 
+	input[type=email] { 
+		text-align: center;
+	}
+	::-webkit-input-placeholder {
+	   text-align: center;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   text-align: center; 
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   text-align: center;  
+	}
+}
+
+@media (min-width: 768px) {
+	.vigo-product{
+		padding: 35px 0 0;
+		input{
+		    padding: 6px;
+		}
+		.product-view{
+			margin-top: 5px;
+			padding-top: 10px;
+			border-top: 1px solid #c8c8c8;
+		}
+		.product-box{
+			text-align: left;
+		}
+		.page-title{
+		    padding-bottom: 30px;
+		}
+		.product-quantity{
+			margin-bottom: 18px;
+		}
+	}
+}
+@media (min-width: 1200px){
+	.vigo-product .product_rating i{
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 1400px){
+	.vigo-product {
+		padding: 90px 0 0;
+		.product-box-title{
+			padding-top: 30px;
+			h5{
+			    font-size: 24px;
+			    line-height: 34px;
+			    margin: 0;
+			}
+		}
+		.product-content{
+		    padding-top: 23px;
+	        padding-bottom: 40px;
+            margin-top: 15px;
+		}
+		.vigo-btn{
+			font-size: 24px;
+		}
+		.product-view{
+			margin-top: 10px;
+			padding-top: 18px;
+		}
+		.slides > li{
+			transition: 0.5s;
+			&:hover{
+			    transform: translateY(-5px);
+			    box-shadow: -1px 3px 22px -1px rgba(0, 0, 0, 0.21);
+			}
+		}
+		.product-price{
+			font-size: 24px;
+			line-height: 34px;
+			font-weight: 900;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.vigo-product{
+		padding: 38px 0 20px;
+	}
+}

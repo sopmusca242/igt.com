@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------
+
+ *
+ * Author      : Wditsolution
+ * Project     : Vigo Landing Page
+ * Version     : 1.0.0
+ * Description : Just a simple starter template to jump start your development.
+ * Primary use : Starter Template
+ * Last update : YYYY/MM/DD
+ * Develop     : Badhon Khan
+ *
+ * -----------------------------------------------------------------*
+ *                         TABLE OF CONTENTS                        *
+ * -----------------------------------------------------------------*
+ *
+ * 01. Base Styles
+ * 02. Header
+ * 03. Navigation
+ * 04. Footer Styles
+ * 05. vigo-slider
+ * 06. call-to-action
+ * 07. features
+ * 08. services
+ * 09. about
+ * 10. product-features
+ * 11. recommended
+ * 12. newsletter
+ * 13. gallery
+ * 14. pricing-table
+ * 15. process
+ * 16. ingredients
+ * 17. testimonial
+ * 18. product
+ * 19. certification
+ * 05. Responsive Styles
+ *
+
+ * -----------------------------------------------------------------*
+ *                        Color Codes                               *
+ * -----------------------------------------------------------------*
+
+ * $white: #fff;
+ * $green: #2acb35;
+ * $black: #333740;
+ * $light-gray: #f1f1f1;
+
+ * -----------------------------------------------------------------*
+ *                        Font Family                               *
+ * -----------------------------------------------------------------*
+ *$ral: 'Raleway', sans-serif;
+ *$lato: 'Lato', sans-serif;
+ *$cou: 'Courgette', cursive;
+-------------------------------------------------------------------*/
+
+
+//Variables
+@import "variables";
+//Base
+@import "base";
+//Layout
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+
+/*---------- Slider Section---------*/
+@import "layout/vigo-slider";
+/*---------- Call To Action Section---------*/
+@import "layout/call-to-action";
+/*---------- features Section---------*/
+@import "layout/features";
+/*---------- services Section---------*/
+@import "layout/services";
+/*---------- about Section---------*/
+@import "layout/about";
+/*---------- Product Features Section---------*/
+@import "layout/product-features";
+/*---------- Recommended Section---------*/
+@import "layout/recommended";
+/*---------- Newsletter Section---------*/
+@import "layout/newsletter";
+/*---------- Newsletter Section---------*/
+@import "layout/gallery";
+/*---------- Pricing Table Section---------*/
+@import "layout/pricing-table";
+/*---------- Process Section---------*/
+@import "layout/process";
+/*---------- Ingredients Section---------*/
+@import "layout/ingredients";
+/*---------- Testimonial Section---------*/
+@import "layout/testimonial";
+/*---------- Certification Section---------*/
+@import "layout/product";
+/*---------- Certification Section---------*/
+@import "layout/certification";
+
+/*-------------------------
+	Responsive Section
+---------------------------*/
+@import "layout/responsive";

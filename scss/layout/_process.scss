@@ -1,0 +1,79 @@
+.process{
+	background: url("../img/process-bg.jpg");
+	background-size: cover;
+	background-position: center center;
+	padding-bottom: 7px;
+	.process-box{
+		margin-bottom: 15px;
+		img{
+			margin-bottom: 5px;
+			width: 40px;
+		}
+	}
+	.page-title{
+		margin-bottom: 10px;
+		&:before{
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 768px){
+	.process{
+	    padding: 35px 0;
+		.process-box{
+			margin-bottom: 0;
+		}
+	}
+	.process-box{
+		&:before{
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+			background: url("../img/dotted-border-img.png");
+			width: 2px;
+			height: 100%;
+		}
+	}
+}
+
+@media (max-width: 575px){
+	.process{
+	    padding-top: 20px !important;
+	    padding-bottom: 5px !important;
+	}
+}
+
+@media (max-width: 768px){
+	.process{
+    	padding: 40px 0 38px;
+    }
+}
+
+@media (min-width: 1024px) {
+	.process{
+		padding: 40px 0;
+	}
+}
+@media (min-width: 1200px) {
+	.process{
+	    padding: 42px 0 53px;
+		.process-box{
+		    margin-top: 28px;
+		    img{
+		    	width: auto;
+		    	transition: 0.5s;
+		    }
+		    p{
+				font-size: 24px;
+				margin-top: 5px !important;
+		    }
+		    &:hover{
+		    	img{
+	    		    transform: translateY(-10px);
+		    	}
+		    }
+		}
+	}
+}

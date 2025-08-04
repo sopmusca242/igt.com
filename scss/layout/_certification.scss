@@ -1,0 +1,28 @@
+.certification{
+	padding-bottom: 23px;
+	.certification-img-box{
+		margin-bottom: 15px;
+		box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.21);	
+		
+	}
+}
+@media (min-width: 1200px){
+	.certification{
+		padding: 88px 0 102px;
+		.certification-img-box{
+			margin-top: 10px !important;
+		    margin-bottom: 0;
+		}
+	}
+	.certification .certification-img-box{
+		transition: 0.5s;
+		&:hover{
+		    transform: translateY(-5px);
+		}
+	}
+}
+@media (max-width: 768px){
+	.certification{
+		padding-bottom: 27px;
+	}
+}

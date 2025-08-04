@@ -1,0 +1,123 @@
+/**
+ * ---------------------------------------------------------------------------
+ * 0?. Navigation
+ * ---------------------------------------------------------------------------
+ */
+.main-nav{
+	// background: #ddd !important;
+	position: relative;
+	z-index: 20;
+	padding: 0;
+	border-bottom: 1px solid rgba(221, 221, 221, 0.35);
+	nav{
+		// padding: 10px 0 0;
+		.nav-link{
+			transition: 0.5s;
+			&:hover{
+				color: $green !important;
+			}
+		}
+		.navbar-brand{
+			img{
+				max-width: 100px;
+			}
+		}
+		.navbar-light .navbar-toggler{
+			padding: 5px;
+		}
+	}
+	.vigo-btn{
+		padding: 7px 5px;
+		position: relative;
+		z-index: 10;
+	    transform: translateX(7px);
+	}
+	.main-logo{
+		position: absolute;
+		width: 100%;
+	    top: 8px;
+	}
+	.navbar-toggler{
+		position: relative;
+		z-index: 10;
+		padding: 3px 5px;
+		transform: translateX(-7px);
+		.navbar-toggler-icon{
+			font-size: 15px;
+		}
+	}
+}
+.main-nav{
+	.current{
+		a{
+			color: $green !important;
+		}
+	}
+}
+@media (min-width: 768px){
+	.main-nav{
+		.navbar-expand-lg{
+			padding-top: 0;
+		}
+		.nav-link{
+			color: $black !important;
+		}
+	}
+}
+@media (min-width: 992px){
+	.main-nav .main-logo{
+		position: static;
+	}
+}
+
+@media (min-width: 1024px){
+	.main-nav .main-logo{
+		position: absolute;
+	}
+	.main-nav {
+		.main-logo{
+			display: inline-block !important;
+			left: 0 !important;
+			// position: static;
+			width: auto;
+			top: 10px;
+		}
+	}
+}
+
+@media (min-width: 1200px){
+	.header-top{
+		padding: 10px 0;
+	}
+	.main-nav{
+		padding-bottom: 0;
+		.navbar-nav{
+			margin-right: 52px;
+		}
+		.navbar-expand-lg{
+			padding: 2px 0;
+		}
+		.nav-link{
+			font-size: 17px;
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+		nav {
+			.navbar-brand img{
+				max-width: 100%;
+			}
+		}
+	}
+	.header-info{
+		.header-meta-search-btn{
+			margin-right: 0;
+		}
+		.header-meta-search-icon{
+			margin-right: 5px !important;
+		}
+	}
+	.main-nav .vigo-btn{
+		padding-top: 13px !important;
+		padding-bottom: 13px !important;
+	}
+}

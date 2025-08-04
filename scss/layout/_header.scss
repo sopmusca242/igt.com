@@ -1,0 +1,155 @@
+/**
+ * ---------------------------------------------------------------------------
+ * 0?. Header Styles
+ * ---------------------------------------------------------------------------
+ */
+.header-info{
+	.media{
+		width: 25px;
+		height: 25px;
+		border-radius: 100%;
+	}
+	.header-meta{
+		margin-right: 5px;
+	}
+}
+.social-media{
+	// padding: 0 0 10px;
+	i{
+		font-size: 18px;
+		margin: 0 3px;
+	}
+}
+.modal-dialog{
+	textarea,
+	input{
+		margin-bottom: 10px;
+	}
+}
+.header-top{
+	a{
+		transition: 0.5s;
+		&:hover{
+			text-decoration: none;
+			color: $black !important;
+		}
+	}
+	.header-meta {
+		.header-meta-main-btn{
+			.media-body{
+				transition: 0.5s;
+			}
+			&:hover{
+				.media-body{
+					color: $black !important;
+				}
+			}
+		}
+	}
+	.social-media{
+		a{
+			i{
+				transition: 0.5s;
+			}
+			&:hover{
+				i{
+					color: $black !important;
+				}
+			}
+		}
+	}
+}
+
+header{
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		background: #fff;
+		border-bottom: 1px dashed $green;
+	}
+}
+@media (min-width: 576px) {
+	.header-top{
+		.custom-container{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.header-top{
+		.custom-container{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	header{
+		.social-media{
+			padding: 0;
+			padding-left: 18px;
+		}
+	}
+	.header-info{
+		i{
+			width: 35px;
+			height: 35px;
+			background: $white;
+		    border-radius: 100%;
+			margin-right: 10px !important;
+			font-size: 18px;
+			position: relative;
+			&:before{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		.media{
+			width: auto;
+			height: auto;
+			border-radius: 100%;
+		}
+		.header-meta{
+			background: transparent !important;
+			margin-right: 36px;			
+			.header-meta-main-btn{
+				margin-right: 10px;
+				background: transparent !important;
+			}
+			.search-form{
+				i{
+					width: auto;
+					height: auto;
+				    background: transparent;
+				    margin: 0 !important;
+					&:before{
+						position: static;
+						left: auto;
+						height: auto;
+					}
+				}
+			}
+		}
+		.header-meta-ph{
+			margin-right: 46px;
+		}
+	}
+
+	.ct-slider-text{
+		transform: translateX(-24px);
+	}
+
+	.social-media {
+		i{
+			margin-left: 0;
+			margin-right: 16px;
+		}
+	}
+
+}

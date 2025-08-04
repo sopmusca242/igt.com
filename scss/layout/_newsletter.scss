@@ -1,0 +1,114 @@
+.newsletter{
+	background: url("../img/newsletter-bg.jpg");
+	background-size: cover;
+	background-position: center center;
+	input[type=text], 
+	input[type=email] { 
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	::-webkit-input-placeholder {
+	   text-align: center;
+	   color: $white;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   text-align: center;  
+	   color: $white;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   text-align: center;  
+	   color: $white;
+	}
+
+	:-ms-input-placeholder {  
+	   text-align: center; 
+	   color: $white;
+	}
+	.justify-content-center{
+		.vigo-btn{
+			background: #fff !important;
+		}
+	}
+	.white-btn{
+		&:hover{
+			background: transparent !important;
+			color: $green !important;
+		}
+	}
+	input{
+		font-size: 14px;
+		padding: 5px .75rem;
+	}
+	// .page-title{
+	// 	.page-sub-title{
+	// 		font-family: $ral;
+	// 	}
+	// }
+}
+
+@media (max-width: 575px){
+	.newsletter{
+		padding-top: 17px !important;
+		padding-bottom: 24px !important;
+	}
+}
+
+@media (min-width: 768px){
+	.newsletter{
+		padding: 35px 0;
+		input{
+			padding: 7px;
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.newsletter{
+		padding: 40px 0 30px;
+		.page-title{
+		    margin-bottom: 30px;
+		}
+	}
+}
+
+@media (min-width: 1024px){
+	.newsletter{
+		padding: 40px 0;
+		input[type=text], 
+		input[type=email]{
+			margin-bottom: 0;
+		    padding: 10px;
+		}
+		.vigo-btn{
+		    font-size: 16px;
+		}		
+	}
+}
+@media (min-width: 1200px){
+	.newsletter{
+	    padding: 53px 0 60px;
+		input[type=text], 
+		input[type=email]{
+			font-size: 24px;
+			line-height: 34px;
+			padding: 13px !important;
+		}
+		.vigo-btn{
+		    font-size: 24px;
+		    padding: 15px 40px !important;
+		}
+		.newsletter-input{
+			margin: 0 10px;
+		}
+	}
+}
+
+@media (min-width: 1400px){
+	.newsletter input[type=text], 
+	.newsletter input[type=email]{
+		padding: 22px;
+	}
+}

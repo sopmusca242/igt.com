@@ -1,0 +1,122 @@
+.about-section{
+	background: url("../img/about-bg.jpg");
+	background-size: cover;
+	text-align: center;
+	.about-content-title{
+		margin-top: 15px;
+		font-size: 20px;
+		padding-bottom: 15px;
+		&:before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 80px;
+			height: 4px;
+			background: $white;
+			border-radius: 20px;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+@media (min-width: 768px){
+	.about-section{
+	    padding: 35px 0;
+	}
+}
+
+@media (min-width: 1024px){
+	.about-section{
+		padding: 40px 0;
+		text-align: left;
+		.about-content-title{
+			margin-top: 0;
+			line-height: 1;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+		}
+		.about-content-title{
+			&:before{
+				left: 0;
+				transform: translateX(0);
+			}
+		}
+	}
+}
+@media (min-width: 1200px){
+	.about-section{
+		padding: 102px 0 94px;
+		.about-content-title{
+			font-size: 47px;
+			line-height: 57px;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+		.about-content{
+			p{
+				margin-bottom: 25px;
+			}
+		}
+		.about-section-btn{
+			margin-top: 16px;
+			padding: 14px 48px !important;
+			font-size: 18px;
+			line-height: 28px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			border-color: #333740;
+			color: #333740 !important;
+			i{
+				font-size: 18px;
+			}
+			&:hover{
+				color: #fff !important;
+			}
+		}
+		#video{
+			margin-top: 10px;
+		}
+		.about-section-area{
+			padding-left: 31px;
+		}
+		.about-section-text-area{
+			p{
+				font-size: 15px;
+				line-height: 25px;
+				
+			}
+		}
+	}
+
+}
+@media (max-width: 575px){
+	.about-section{
+		padding-top: 24px !important;
+		padding-bottom: 24px !important;
+	}
+}
+@media (max-width: 768px){
+	.about-section{
+		padding: 41px 0 42px;
+	}
+}
+
+@media (max-width: 1024px){
+	.about-section {
+		.about-section-area{
+			padding-left: 28px;
+		}
+		.about-section-btn{
+			border-color: #333740;
+			color: #333740 !important;
+			overflow: hidden;
+		}
+		.about-section-text-area{
+			padding-bottom: 20px;
+			p{
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

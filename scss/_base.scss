@@ -1,0 +1,421 @@
+/**
+ * ---------------------------------------------------------------------------
+ * 0?. Base Styles.
+ * ---------------------------------------------------------------------------
+ */
+@import url('https://fonts.googleapis.com/css?family=Courgette|Lato|Raleway:400,500,600,700,900');
+
+body{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: $lato;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: $ral;
+	line-height: 1;
+}
+section{
+	padding: 20px 0;
+}
+
+/*------------------------------------------
+	Theme Colors Class
+--------------------------------------------*/
+.white{
+	color: $white !important;
+}
+.black{
+	color: $black !important;
+}
+.green{
+	color: $green !important;
+}
+.bg-white{
+	background: $white !important;
+}
+.bg-black{
+	background: $black !important;
+}
+.bg-green{
+	background: $green !important;
+}
+/*------------------------------------------
+	Global Class
+--------------------------------------------*/
+.ral{
+	font-family: $ral;
+}
+.lato{
+	font-family: $lato;
+}
+.cou{
+	font-family: $cou;
+}
+.pd-0{
+	padding: 0;
+}
+.pdl-0{
+	padding-left: 0;
+}
+.pdr-0{
+	padding-right: 0;
+}
+.pdb-0{
+	padding-bottom: 0;
+}
+.mr-0{
+	margin: 0 !important;
+}
+.mrl-0{
+	margin-left: 0;
+}
+.mrr-0{
+	margin-right: 0;
+}
+.mrt-0{
+	margin-top: 0 !important;
+}
+.mrb-0{
+	margin-bottom: 0 !important;
+}
+.mr-auto{
+	margin: 0 auto;
+}
+.pos-r{
+	position: relative;
+}
+.pos-a{
+	position: absolute;
+}
+.width-auto{
+	width: auto !important;
+}
+.display-block{
+	display: block;
+}
+.display-inline-block{
+	display: inline-block;
+}
+.border-0{
+	border: 0;
+}
+.focus-none{
+	&:focus{
+		box-shadow: none;
+		border-color: transparent;
+	}
+}
+.border-radius-0{
+	border-radius: 0;
+}
+.border-transparent{
+	border-color: transparent;
+	&:active,
+	&:focus{
+		border-color: transparent;
+	}
+}
+.bg-transparent{
+	background: transparent;
+}
+
+.container-1650{
+	max-width: 1650px;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.page-title{
+	padding-bottom: 23px;
+	.page-sub-title{
+		font-family: $cou;
+		color: $green;
+		font-size: 14px;
+	}
+	.page-main-title{
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+.vigo-btn{
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+    &:hover{
+    	color: $green !important;
+    	background: $white !important;
+    	border: 1px solid $green !important;
+    }
+}
+.hvr-shutter-out-horizontal{
+	transition-duration: 0.50s !important;
+	&:hover{
+		border-color: $green;
+		color: $green !important;		
+	}
+	&:before{
+		background: $white;
+		transition-duration: 0.50s;
+	}
+}
+.hvr-shutter-in-horizontal{
+	transition-duration: 0.50s !important;
+	&:before{
+		background: $white;
+		transition-duration: 0.50s;
+	}
+	&:hover{
+		border-color: $white !important;
+		color: $white !important;
+		background: $green !important;
+	}
+}
+.white-btn{
+	&:hover{
+		background: $green !important;
+		color: $white !important;
+		border-color: $white !important;
+		transform: translateY(-5px);
+	}
+}
+.pos-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+.highlight-text{
+	font-weight: 700;
+}
+.before-none{
+	&:before{
+		display: none;
+	}
+}
+.vigo-loder{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: $green;
+	z-index: 30;
+}
+.mixitup-control-active{
+	color: $green !important;
+}
+.sk-rotating-plane {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+	  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+	          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+	@-webkit-keyframes sk-rotatePlane {
+	  0% {
+	    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+	  50% {
+	    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+	  100% {
+	    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+	@keyframes sk-rotatePlane {
+	  0% {
+	    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+	  50% {
+	    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+	  100% {
+	    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+#container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+}
+#play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: url(../img/play-button.png) no-repeat 50% 50%;
+    background-size: auto, cover;
+    z-index: 10;
+}
+
+.page-title {
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 4px;
+		width: 80px;
+		border-radius: 20px;
+		background: $green;
+	}
+}
+
+/* ==========================
+	Custom Media Query
+============================= */
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 575px) {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 1024px) {
+	body{
+		font-size: 15px;
+		line-height: 25px;
+		font-family: $lato;
+	}
+	h1{
+		font-size: 72px;
+		line-height: 82px;
+		font-weight: 400;
+	}
+	h2{
+		font-size: 47px;
+		line-height: 41px;
+		font-weight: 500;
+	}
+	h3{
+		font-size: 36px;
+		line-height: 35px;
+	}
+	h4{
+		font-size: 34px;
+		line-height: 38px;
+	}
+	h5{
+		font-size: 24px;
+		line-height: 35px;
+	}
+	h6{
+		font-size: 18px;
+		line-height: 35px;
+	}
+	i{
+		line-height: 1 !important;
+	}
+
+	.page-title {
+		.page-sub-title{
+			line-height: 1;
+		}
+		.page-main-title{
+		    font-size: 20px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.custom-container{
+		max-width: 1650px;
+	}
+	.vigo-btn{
+	    font-size: 18px;
+	    padding-left: 25px !important;
+	    padding-right: 25px !important;
+	    padding-top: 0.5rem !important;
+	    padding-bottom: 0.5rem !important;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	.page-title {
+		padding-bottom: 30px;
+		margin-bottom: 50px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 4px;
+			width: 80px;
+			border-radius: 20px;
+			background: $green;
+		}
+		.page-sub-title{
+			font-size: 24px;
+			line-height: 34px;
+		}
+		.page-main-title{
+			font-size: 34px;
+			line-height: 44px;
+			color: #333740;
+		}
+	}
+	.is-sticky{
+		.main-nav{
+			border-bottom: 1px solid #c8c8c8;
+		}
+	}
+
+	.hvr-shutter-out-horizontal{
+	    padding-left: 24px;
+	    padding-right: 24px;
+	    overflow: hidden;
+		&:hover{
+			border-color: $green;
+			color: $green !important;		
+		}
+		&:before{
+			background: $white;
+			transition-duration: 0.50s;
+		}
+	}
+	.hvr-shutter-in-horizontal{
+	    padding-left: 24px;
+	    padding-right: 24px;
+	    overflow: hidden;
+		&:before{
+			background: $white;
+			transition-duration: 0.50s;
+		}
+		&:hover{
+			border-color: $white !important;
+			color: $white !important;
+			background: $green !important;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	body{
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.page-title{
+		padding-bottom: 8px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-title {
+	    padding-bottom: 15px;
+		.page-sub-title{
+		    line-height: 24px;
+		}
+		.page-main-title{
+			line-height: 30px;
+		}
+	}
+}

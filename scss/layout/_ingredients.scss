@@ -1,0 +1,136 @@
+.ingredients{
+	.accordion-menu{
+		padding: 10px;
+		color: $black;
+		font-weight: 700;
+	}
+	.item{
+		margin-bottom: 13px;
+		a{
+			transition: 0.5s;
+			&:hover{
+				text-decoration: none;
+			}
+			.subtitle{
+				font-size: 13px;
+				display: none;
+			}
+		}
+	}
+	.accordion-menu{
+		box-shadow: 0px 0px 23px -8px rgba(51, 51, 51, 0.3411764705882353);
+	}
+
+	.collapsed{
+		background: $white;
+	}
+	.accordion-content{
+		padding: 10px; 
+	}
+	.accordion-content{
+	    background: $green;
+	    padding: 5px 20px 15px 10px;
+	    color: $white;
+	}
+	.active{
+		background: $green;
+		color: $white;
+		.subtitle{
+			display: block !important;
+		}
+		i{
+			transition: 0.5s;
+		    transform: rotate(45deg);
+		}
+	}
+	.ingredients-Name{
+	    margin-bottom: 20px;
+        font-size: 14px;
+	}
+    .active{
+		padding-bottom: 3px;
+    }
+}
+
+@media (max-width: 575px) {
+	.ingredients{
+		padding-top: 20px !important;
+	    padding-bottom: 25px !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.ingredients{
+	    padding: 35px 0;
+	    .ingredients-name{
+	    	margin-bottom: 36px;
+	    }
+	}
+}
+@media (min-width: 1024px) {
+	.ingredients{
+	    padding: 40px 0 6px;
+	}
+}
+@media (min-width: 1200px) {
+	.ingredients{
+		padding: 95px 0 65px;
+		.ingredients-Name{
+			margin-bottom: 20px;
+		}
+		.accordion-menu{
+			font-size: 18px;
+			padding: 26px 45px;
+		}
+	}
+	.ingredients {
+		.ingredients-Name{
+			font-size: 24px;
+			line-height: 34px;
+		    margin-bottom: 24px;
+		}
+		.accordion-content{
+			padding: 0px 55px 25px 46px;
+		}
+	}
+	.ingredients {
+		.item a .subtitle{
+			font-size: 15px;
+			line-height: 25px;
+		    font-weight: 400;
+		}
+	}
+	#vigoaccordion{
+		.active{
+			padding-bottom: 10px;
+		}
+	}
+	.vigoaccordion-content{
+		border-radius: 10px;
+	}
+}
+@media (max-width: 1024px) {
+	.ingredients {
+		.accordion-content,
+		.active{
+			padding-left: 15px;
+		}
+		.ingredients-big{
+			margin-bottom: 34px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.ingredients{
+	    padding: 40px 0;
+	}
+	.ingredients {
+		.ingredients-big{
+		    margin: 0;
+		}
+		.page-title{
+			margin-bottom: 30px;
+		}
+	}
+}
